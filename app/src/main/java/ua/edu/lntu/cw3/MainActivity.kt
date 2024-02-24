@@ -80,3 +80,19 @@ fun CodeLangCard(codeLang: codeLangItem, modifier: Modifier = Modifier) {
     }
 }
 
+@Preview(showBackground = true)
+@Composable
+fun CodeLangPreview() {
+    Olexandr_Zaitsev_cw3Theme {
+        val codeLang = codeLangItem(R.string.python, R.drawable.image1)
+        Column(
+            modifier = Modifier.fillMaxSize(),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            CodeLangCard(codeLang = codeLang)
+        }
+    }
+}
+
+
