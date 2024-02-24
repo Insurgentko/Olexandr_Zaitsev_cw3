@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Olexandr_Zaitsev_cw3</string>
+    <string name="dot_net">C#</string>
+    <string name="java">Java</string>
+    <string name="javascript">JavaScrpipt</string>
+    <string name="cpp">C++</string>
+    <string name="golang">Go</string>
+    <string name="python">Python</string>
 </resources>
