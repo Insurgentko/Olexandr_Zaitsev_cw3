@@ -50,6 +50,20 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
+fun CodeLangGrid(modifier: Modifier = Modifier) {
+    LazyVerticalGrid(
+        columns = GridCells.Fixed(2),
+        verticalArrangement = Arrangement.spacedBy(8.dp),
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+        modifier = modifier
+    ) {
+        items(Datasource.codeLangs) { topic ->
+            CodeLangCard(topic)
+        }
+    }
+}
+
+@Composable
 fun CodeLangCard(codeLang: codeLangItem, modifier: Modifier = Modifier) {
     Card {
         Row {
